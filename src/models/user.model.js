@@ -29,6 +29,17 @@ const userSchema = new Schema(
     refreshToken: {
       type: String,
     },
+
+    registerChallenge: {
+      type: String,
+    },
+    loginChallenge: {
+      type: String,
+    },
+
+    passKey: {
+      type: mongoose.Schema.Types.Mixed, // or simply Object
+    },
   },
   { timestamps: true }
 );
